@@ -20,7 +20,7 @@ function Editbook() {
       setAuthor(editbook.author);
     }
     dispatch(GETBOOK(editId));
-  }, [editbook, editId]);
+  }, [editbook, editId, dispatch]);
 
   const updateBook = (e) => {
     e.preventDefault();
